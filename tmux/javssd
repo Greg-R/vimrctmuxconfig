@@ -1,0 +1,11 @@
+source-file ~/.tmux.conf
+new-session -s javssd -n julia -d
+send-keys -t javssd 'cd /media/ubuntu/Rpi4/julia_projects/jav/projects/jav' C-m
+send-keys -t javssd 'julia' C-m
+new-window -n src -t javssd
+send-keys -t javssd:2 'cd /media/ubuntu/Rpi4/julia_projects/jav/projects/jav/src' C-m
+send-keys -t javssd:2 'vim jav.jl' C-m
+new-window -n bash -t javssd
+select-window -t javssd:3
+send-keys -t javssd 'cd /media/ubuntu/Rpi4/julia_projects/jav/projects/jav' C-m
+select-window -t javssd:1

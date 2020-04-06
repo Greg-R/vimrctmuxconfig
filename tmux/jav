@@ -1,0 +1,11 @@
+source-file ~/.tmux.conf
+new-session -s jav -n julia -d
+send-keys -t jav 'cd ~/julia_projects/jav/projects/jav' C-m
+send-keys -t jav 'julia' C-m
+new-window -n src -t jav
+send-keys -t jav:2 'cd ~/julia_projects/jav/projects/jav/src' C-m
+send-keys -t jav:2 'vim jav.jl' C-m
+new-window -n bash -t jav
+select-window -t jav:3
+send-keys -t jav 'cd ~/julia_projects/jav/projects/jav' C-m
+select-window -t jav:1

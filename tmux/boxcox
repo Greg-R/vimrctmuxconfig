@@ -1,0 +1,11 @@
+source-file ~/.tmux.conf
+new-session -s boxcox -n julia -d
+send-keys -t boxcox 'cd /media/ubuntu/Rpi4/julia_projects/boxcox' C-m
+send-keys -t boxcox 'julia' C-m
+new-window -n src -t boxcox
+send-keys -t boxcox:2 'cd /media/ubuntu/Rpi4/julia_projects//boxcox/src' C-m
+send-keys -t boxcox:2 'vim boxcox.jl' C-m
+new-window -n bash -t boxcox
+select-window -t boxcox:3
+send-keys -t boxcox 'cd /media/ubuntu/Rpi4/julia_projects//boxcox' C-m
+select-window -t boxcox:1
