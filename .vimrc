@@ -2,8 +2,8 @@ set nocompatible " Use modern VIM.
 syntax on
 
 "filetype plugin indent on " Is this required for filetype plugins?
-
-silent! helptags ALL
+packloadall   " Load all plugins.
+silent! helptags ALL  " Load help files for all plugins.
 
 let g:slime_target = "vimterminal"
 
