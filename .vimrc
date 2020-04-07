@@ -34,3 +34,11 @@ augroup auto_save_folds
 autocmd!
 autocmd BufWinLeave * mkview
 autocmd BufWinEnter * silent loadview
+
+" Notes on installing plug-ins.  Try to use indigenous VIM manager!
+" Plug-ins will go into this directory:
+" ~/.vim/pack/plugins/start
+" git clone the plug-in to the above directory.
+" As of April 7 2020 using:
+" nerdtree julia-vim
+
