@@ -1,7 +1,7 @@
 set nocompatible " Use modern VIM.
 syntax on
 
-"filetype plugin indent on " Is this required for filetype plugins?
+filetype plugin on " Apparently required for full functionality. 
 packloadall   " Load all plugins.
 silent! helptags ALL  " Load help files for all plugins.
 
